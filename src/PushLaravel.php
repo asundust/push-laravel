@@ -22,11 +22,13 @@ class PushLaravel
     }
 
     /**
-     * send
+     * send.
      *
      * @param        $title
      * @param string $content
+     *
      * @return string
+     *
      * @throws PushLaravelException
      * @throws GuzzleException
      */
@@ -49,7 +51,7 @@ class PushLaravel
                 'verify' => false,
                 'http_errors' => false,
             ]))
-                ->post(rtrim($this->pushUrl, '/') . '/push/' . $this->pushSecret, [
+                ->post(rtrim($this->pushUrl, '/').'/push/'.$this->pushSecret, [
                     'form_params' => $formParams,
                 ])
                 ->getBody()
