@@ -5,17 +5,14 @@ namespace Asundust\PushLaravel\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class PushLaravel
+ * Class PushLaravel.
  *
- * @package Asundust\PushLaravel\Facades
  * @method static \Asundust\PushLaravel\PushLaravel send($title, $content = '')
  */
 class PushLaravel extends Facade
 {
     /**
      * Get the registered name of the component.
-     *
-     * @return string
      */
     protected static function getFacadeAccessor(): string
     {
@@ -24,10 +21,11 @@ class PushLaravel extends Facade
 
     /**
      * @param string $name
+     *
      * @return \Asundust\PushLaravel\PushLaravel
      */
     public static function config($name = '')
     {
-        return $name ? app('push-laravel.' . $name) : app('push-laravel');
+        return $name ? app('push-laravel.'.$name) : app('push-laravel');
     }
 }
