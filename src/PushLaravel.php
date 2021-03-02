@@ -24,15 +24,17 @@ class PushLaravel
     /**
      * send.
      *
-     * @param        $title
-     * @param string $content
+     * @param string      $title
+     * @param string|null $content
+     * @param string|null $url
+     * @param string|null $urlTitle
      *
-     * @return string
+     * @return array|bool
      *
      * @throws PushLaravelException
      * @throws GuzzleException
      */
-    public function send($title, $content = '')
+    public function send(string $title, ?string $content = null, ?string $url = null, ?string $urlTitle = null)
     {
         if (!$this->pushUrl || !$this->pushSecret) {
             throw new PushLaravelException('PushLaravel Config Error');
@@ -43,6 +45,12 @@ class PushLaravel
         ];
         if ($content) {
             $formParams['content'] = $content;
+        }
+        if ($url) {
+            $formParams['url'] = $url;
+        }
+        if ($urlTitle) {
+            $formParams['url_title'] = $urlTitle;
         }
 
         return json_decode(
