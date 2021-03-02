@@ -24,11 +24,6 @@ class PushLaravel
     /**
      * send.
      *
-     * @param string      $title
-     * @param string|null $content
-     * @param string|null $url
-     * @param string|null $urlTitle
-     *
      * @return array|bool
      *
      * @throws PushLaravelException
