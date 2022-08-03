@@ -19,7 +19,7 @@
     }
   ],
   "require": {
-    "illuminate/support": "~6|~7|~8",
+    "illuminate/support": "~6|~7|~8|~9",
     "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
   },
   "autoload": {
