@@ -1,8 +1,6 @@
 企业微信应用消息推送插件 Laravel客户端
 ======
-> 本项目为客户端，服务端请查看
-> [https://github.com/asundust/wechat-work-push(Laravel-Admin版)](https://github.com/asundust/wechat-work-push)
-> [https://github.com/asundust/dcat-wechat-work-push(Dcat-Admin版)](https://github.com/asundust/dcat-wechat-work-push)
+> 本项目为客户端，服务端请查看 [Laravel-Admin服务端版](https://github.com/asundust/wechat-work-push) [Dcat-Admin服务端版](https://github.com/asundust/dcat-wechat-work-push)
 
 ![StyleCI build status](https://github.styleci.io/repos/338733529/shield)
 <a href="https://packagist.org/packages/asundust/push-laravel"><img src="https://img.shields.io/packagist/dt/asundust/push-laravel" alt="Total Downloads"></a>
