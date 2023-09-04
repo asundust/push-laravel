@@ -26,6 +26,6 @@ class PushLaravel extends Facade
      */
     public static function config($name = '')
     {
-        return $name ? app('push-laravel.'.$name) : app('push-laravel');
+        return $name ? app('push-laravel.' . $name) : app('push-laravel');
     }
 }

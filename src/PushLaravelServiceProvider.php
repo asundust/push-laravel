@@ -22,7 +22,7 @@ class PushLaravelServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/push-laravel.php', 'push-laravel');
+        $this->mergeConfigFrom(__DIR__ . '/../config/push-laravel.php', 'push-laravel');
 
         // Register the service the package provides.
         foreach (config('push-laravel') as $account => $config) {
@@ -51,7 +51,7 @@ class PushLaravelServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/push-laravel.php' => config_path('push-laravel.php'),
+            __DIR__ . '/../config/push-laravel.php' => config_path('push-laravel.php'),
         ], 'push-laravel.config');
     }
 }
